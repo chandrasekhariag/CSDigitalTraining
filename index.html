@@ -8,10 +8,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">CS Digital Training</a>
-            <div class="collapse navbar-collapse">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
@@ -21,13 +25,42 @@
         </div>
     </nav>
 
-    <header class="bg-primary text-white text-center py-5">
-        <h1>Welcome to CS Digital Training</h1>
-        <p>Learn Java, Python, Web Development, SQL & more.</p>
+    <!-- Hero Section -->
+    <header class="hero-section text-center text-white">
+        <div class="container">
+            <h1>Welcome to CS Digital Training</h1>
+            <p>Master Java, Python, Web Development, SQL & More.</p>
+            <a href="courses.html" class="btn btn-warning btn-lg">Start Learning Now</a>
+        </div>
     </header>
 
-    <footer class="bg-dark text-white text-center py-3">
+    <!-- Courses Overview -->
+    <section class="container text-center mt-5">
+        <h2>Explore Our Courses</h2>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <img src="images/java.png" width="80">
+                <h4>Java Programming</h4>
+                <p>Learn Java from basics to advanced concepts.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="images/python.png" width="80">
+                <h4>Python Development</h4>
+                <p>Start coding in Python and build real-world projects.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="images/webdev.png" width="80">
+                <h4>Web Development</h4>
+                <p>Master front-end and back-end web technologies.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
         <p>&copy; 2025 CS Digital Training. All rights reserved.</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

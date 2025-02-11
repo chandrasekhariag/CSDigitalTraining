@@ -1,1 +1,36 @@
-body { font-family: Arial, sans-serif; }
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(to right, #007bff, #6610f2);
+    padding: 100px 20px;
+}
+
+.hero-section h1 {
+    font-size: 36px;
+}
+
+.hero-section p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Course Icons */
+img {
+    margin-bottom: 10px;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 10px;
+    }
+    .hero-section h1 {
+        font-size: 28px;
+    }
+    .hero-section p {
+        font-size: 16px;
+    }
+}
