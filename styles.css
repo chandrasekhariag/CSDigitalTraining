@@ -27,7 +27,7 @@ body {
 
 /* Hero Section Styles */
 .hero-section {
-    background: #2E1A47, url('images/hero-bg.jpg');
+    background-color: #2E1A47;
     background-size: cover;
     background-position: center;
     padding: 100px 0;
