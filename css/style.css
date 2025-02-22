@@ -1,59 +1,174 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+    color: #333;
 }
 
-/* Hero Section */
-.hero-section {
-    background: linear-gradient(to right, #007bff, #6610f2);
-    padding: 80px 20px;
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
     text-align: center;
 }
 
-.hero-section h1 {
-    font-size: 36px;
-}
-
-.hero-section p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-/* Call to Action Section */
-.cta-section {
-    background: #28a745;
-    padding: 50px 20px;
+nav ul {
+    list-style: none;
+    padding: 0;
     text-align: center;
 }
 
-/* Course Icons */
-img {
-    margin-bottom: 10px;
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-/* Contact Form Styling */
-form {
-    background: #f8f9fa;
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Page Title */
+.page-title {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #007bff;
+    color: white;
+}
+
+.page-title h2 {
+    margin: 0;
+}
+
+/* Blog Posts */
+.blog-posts {
+    max-width: 800px;
+    margin: 40px auto;
     padding: 20px;
+}
+
+.post {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.post h3 {
+    margin-top: 0;
+}
+
+.read-more {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* About Section */
+.about-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.about-content {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-/* Contact Details Section */
-.col-md-6 h4 {
-    margin-top: 20px;
+.contact-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Success Message */
+.success-message {
+    display: none;
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: white;
+    margin-top: 40px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ffcc00;
 }
 
 /* Mobile Optimization */
 @media (max-width: 768px) {
-    .hero-section {
-        padding: 50px 10px;
+    nav ul {
+        padding: 0;
     }
-    .hero-section h1 {
-        font-size: 28px;
-    }
-    .hero-section p {
-        font-size: 16px;
-    }
-    form {
-        margin-bottom: 20px;
+    
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
     }
 }
