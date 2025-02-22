@@ -48,6 +48,20 @@ body {
     font-size: 1.1rem;
     padding: 10px 30px;
 }
+ .html-icon {
+            color: #E34F26; /* HTML official color */
+            font-size: 100px;
+        }
+
+        .js-icon {
+            color: #F7DF1E; /* JavaScript official color */  
+            font-size: 100px;
+        }
+
+        .python-icon {
+            color: #3776AB; /* Python official color */ 
+            font-size: 100px;
+        }
 
 /* Course Highlights Styles */
 .course-item {
